@@ -1,6 +1,11 @@
+/****
+  Global Style 
+****/
+
 :root {
   --text-color-title: #ffffff;
-  --text-color-primary: #000000;
+  --text-color-primary-black: #000000;
+  --text-color-primary-orange: #f06400;
   --btn-text-color: #fefefe;
   --btn-bg-color-primary: #f06400;
   --bg-color-body: #ffffff;
@@ -16,6 +21,11 @@ body {
   width: 650px;
   height: 1720px;
 }
+
+/****
+  Header Style 
+****/
+
 header {
   position: relative;
   width: 650px;
@@ -97,6 +107,10 @@ h1 {
   margin: 1px 0px 1px 19px;
 }
 
+/****
+  Top Info Style 
+****/
+
 .top-info-container {
   width: 600px;
   height: 127px;
@@ -108,9 +122,6 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: column;
-  /*
-  justify-content: space-evenly;
-  */
   flex-basis: 100%;
   color: var(--bg-color-body);
   width: 423px;
@@ -174,4 +185,189 @@ h1 {
   letter-spacing: normal;
   line-height: normal;
   margin-top: 15px;
+}
+
+/****
+  Cards Style 
+****/
+
+.card-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.card {
+  position: relative;
+  width: 288px;
+  height: 266px;
+  border: 1px solid transparent;
+}
+
+.card-price-container {
+  position: absolute;
+  width: 119px;
+  height: 66px;
+  color: var(--text-color-primary-black);
+  font-family: "Lease Plan";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: right;
+  right: 0;
+  top: 0;
+  margin-left: 159px;
+  margin-right: 10px;
+}
+
+.old-price {
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 37.01px;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+
+.current-price {
+  color: var(--text-color-primary-orange);
+  font-size: 37px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30.69px;
+  text-align: left;
+}
+
+.current-price-currency {
+  color: var(--text-color-primary-orange);
+  font-size: 37px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30.69px;
+  text-align: left;
+}
+
+.info-price {
+  color: var(--text-color-primary-orange);
+  font-size: 9px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 14.05px;
+}
+
+.card-image-container {
+  margin-top: 45px;
+}
+
+.card-button {
+  position: absolute;
+  right: 0;
+  width: 126px;
+  height: 28px;
+  border-radius: 14px;
+  border: none;
+  background-color: var(--btn-bg-color-primary);
+  background-image: linear-gradient(to right, #ee4c14 0%, #f06400 100%);
+  color: #ffffff;
+  font-family: "Lease Plan";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  margin-top: 2px;
+  margin-right: 7px;
+}
+
+.card-info-container {
+  position: absolute;
+
+  width: 191px;
+  height: 35px;
+  color: #000000;
+  font-family: "Arial MT";
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20.02px;
+  text-align: center;
+}
+
+.car-brand {
+  font-family: "Arial - Bold MT";
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: -10px;
+}
+
+.car-version {
+  font-family: "Arial MT";
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.card-2,
+.card-4 {
+  margin-left: 25px;
+}
+
+.card-3,
+.card-4 {
+  margin-top: 55px;
+}
+
+.card-1 > .card-info-container {
+  width: 191px;
+  margin: 28px 47px 0px 46px;
+}
+
+.card-2 > .card-info-container {
+  width: 178px;
+  margin: 28px 80px 0px 71px;
+}
+
+.card-3 > .card-info-container {
+  width: 204px;
+  margin: 55px 80px 0px 46px;
+}
+
+.card-4 > .card-info-container {
+  width: 124px;
+  margin: 55px 110px 0px 98px;
+}
+
+.test {
+  /* Style for "RENAULT Sc" */
+  width: 191px;
+  height: 35px;
+  color: #000000;
+  font-family: "Arial MT";
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20.02px;
+  text-align: center;
+  /* Text style for "RENAULT Sc" */
+  font-family: "Arial - Bold MT";
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  /* Text style for "Intens TCe" */
+  font-family: "Arial MT";
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
 }
