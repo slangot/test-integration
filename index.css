@@ -526,6 +526,114 @@ h1 {
   letter-spacing: 0.54px;
   margin: 11px 18px 0px -18px;
 }
+
+/****
+  Selection Style 
+****/
+
+.selection-container {
+  width: 653px;
+  height: 94px;
+  background-color: var(--bg-color-info);
+  padding: 21px 28px 22px 24px;
+}
+
+.selection-sub-container {
+  position: relative;
+  width: 601px;
+  height: 51px;
+  background-color: var(--bg-color-body);
+}
+
+.selection-title {
+  /* Style for "Sélectionn" */
+  position: absolute;
+  width: 193px;
+  height: 12px;
+  color: #000000;
+  font-family: "Lease Plan";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  margin: 19px 392px 20px 16px;
+}
+
+.selection-select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  width: 206px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #b5b5b5;
+  margin: 10px 169px 9px 226px;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select {
+  width: 154px;
+  height: 13px;
+  color: #b2adad;
+  font-family: "Lease Plan";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  padding-right: 33px;
+  padding-left: 13px;
+}
+
+.selection-button {
+  position: absolute;
+  width: 127px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: var(--btn-bg-color-primary);
+  border: none;
+  margin: 10px 7px 9px 458px;
+}
+
+.selection-button-text {
+  /* Style for "rechercher" */
+  width: 73px;
+  height: 8px;
+  color: #fefefe;
+  font-family: "Lease Plan";
+  font-size: 10px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  /* Text style for "rechercher" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-left: -19px;
+}
+
+.selection-button-icon {
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  color: var(--btn-text-color);
+  margin-left: 14px;
+}
+
 .test {
   /* Style for "Véhicule d" */
   width: 84px;
