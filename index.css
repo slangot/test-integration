@@ -2,15 +2,31 @@
   Global Style 
 ****/
 
+@font-face {
+  font-family: "Arial MT";
+  src: url(./assets/fonts/02587_ARIALMT.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Arial - Bold MT";
+  src: url(./assets/fonts/Arial-BoldMT.otf) format("otf");
+}
+
 :root {
   --text-color-title: #ffffff;
   --text-color-primary-black: #000000;
   --text-color-primary-orange: #f06400;
+  --text-select-color: #b2adad;
+  --text-footer-color: #a6a6a6;
+  --text-font-style-normal: normal;
+  --text-line-height-normal: normal;
+  --text-letter-spacing-normal: normal;
   --btn-text-color: #fefefe;
   --btn-bg-color-primary: #f06400;
   --bg-color-body: #ffffff;
   --bg-color-info: #00b1af;
   --bg-color-footer: #eeeeee;
+  --border-selection: #b5b5b5;
 }
 
 * {
@@ -34,7 +50,8 @@ header {
 
 .header-container {
   position: relative;
-  background-image: url("./assets/banner1.png"), url("./assets/banner2.png");
+  background-image: url("./assets/images/banner1.png"),
+    url("./assets/images/banner2.png");
   background-position: left 0px top 55%, right -860% top 55%;
   background-repeat: no-repeat no-repeat;
   width: 650px;
@@ -71,12 +88,12 @@ h1 {
   width: 373px;
   height: 86px;
   color: var(--text-color-title);
-  font-family: "Lease Plan";
+  font-family: Lease Plan, Arial;
   font-size: 25px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: right;
 }
 
@@ -94,17 +111,16 @@ h1 {
   background-color: var(--btn-bg-color-primary);
   color: var(--btn-text-color);
   text-align: center;
-  /*
   font-family: "Arial - Bold MT";
-  */
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
 }
 
 .header-button-icon {
   margin: 1px 0px 1px 19px;
+  font-family: "Arial - Bold MT";
 }
 
 /****
@@ -130,9 +146,9 @@ h1 {
   font-family: "Arial MT";
   font-size: 13px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: center;
 }
 
@@ -145,27 +161,27 @@ h1 {
   font-family: "Arial - Bold MT";
   font-size: 20px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   margin-top: 14px;
 }
 
 .info-line-2 {
   font-family: "Arial MT";
   font-size: 20px;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
 }
 
 .info-line-3 {
   font-family: "Arial - Bold MT";
   font-size: 16px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
 }
 
 .info-divider {
@@ -181,9 +197,9 @@ h1 {
 
 .info-line-4 {
   font-family: "Arial MT";
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   margin-top: 15px;
 }
 
@@ -210,12 +226,12 @@ h1 {
   width: 119px;
   height: 66px;
   color: var(--text-color-primary-black);
-  font-family: "Lease Plan";
+  font-family: Lease Plan, Arial;
   font-size: 12px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: right;
   right: 0;
   top: 0;
@@ -236,8 +252,8 @@ h1 {
 .current-price {
   color: var(--text-color-primary-orange);
   font-size: 37px;
-  font-style: normal;
-  letter-spacing: normal;
+  font-style: var(--text-font-style-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   line-height: 30.69px;
   text-align: left;
 }
@@ -245,8 +261,8 @@ h1 {
 .current-price-currency {
   color: var(--text-color-primary-orange);
   font-size: 37px;
-  font-style: normal;
-  letter-spacing: normal;
+  font-style: var(--text-font-style-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   line-height: 30.69px;
   text-align: left;
 }
@@ -254,8 +270,8 @@ h1 {
 .info-price {
   color: var(--text-color-primary-orange);
   font-size: 9px;
-  font-style: normal;
-  letter-spacing: normal;
+  font-style: var(--text-font-style-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   line-height: 14.05px;
 }
 
@@ -271,14 +287,18 @@ h1 {
   border-radius: 14px;
   border: none;
   background-color: var(--btn-bg-color-primary);
-  background-image: linear-gradient(to right, #ee4c14 0%, #f06400 100%);
-  color: #ffffff;
-  font-family: "Lease Plan";
+  background-image: linear-gradient(
+    to right,
+    #ee4c14 0%,
+    var(--text-color-primary-orange) 100%
+  );
+  color: var(--text-color-title);
+  font-family: Lease Plan, Arial;
   font-size: 16px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: center;
   margin-top: 2px;
   margin-right: 7px;
@@ -286,15 +306,14 @@ h1 {
 
 .card-info-container {
   position: absolute;
-
   width: 191px;
   height: 35px;
-  color: #000000;
+  color: var(--text-color-primary-black);
   font-family: "Arial MT";
   font-size: 17px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
+  font-style: var(--text-font-style-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   line-height: 20.02px;
   text-align: center;
 }
@@ -303,17 +322,17 @@ h1 {
   font-family: "Arial - Bold MT";
   font-size: 19px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   margin-bottom: -10px;
 }
 
 .car-version {
   font-family: "Arial MT";
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
 }
 
 .card-2,
@@ -355,6 +374,7 @@ h1 {
   margin-top: 55px;
   background-color: var(--btn-bg-color-primary);
   border: none;
+  text-align: center;
 }
 
 .all-cars-button-text {
@@ -364,16 +384,17 @@ h1 {
   font-family: "Arial - Bold MT";
   font-size: 15px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: center;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-transform: uppercase;
-  margin: 18px 0px 17px 34px;
+  margin: 18px 0px 17px 16px;
 }
 
 .all-cars-icon {
-  margin: 1px 23px 1px 26px;
+  margin-right: 23px;
+  margin-left: 26px;
+  font-family: "Arial - Bold MT";
 }
 
 /****
@@ -393,18 +414,12 @@ h1 {
   font-family: "Arial - Bold MT";
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  letter-spacing: 0.72px;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
   text-align: left;
   text-transform: uppercase;
   margin-left: 1px;
-}
-
-.bold-title {
-  font-style: normal;
-  letter-spacing: 0.72px;
-  line-height: normal;
 }
 
 .prestation-divider {
@@ -420,9 +435,6 @@ h1 {
   width: 100%;
   justify-content: space-evenly;
   text-align: center;
-}
-
-.prestation-card {
 }
 
 .prestation-card-1 {
@@ -472,58 +484,36 @@ h1 {
 }
 
 .prestation-info {
+  font-family: "Arial - Bold MT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: 0.54px;
+  color: var(--text-color-primary-black);
 }
 
 .prestation-info-1 {
   width: 53px;
   height: 10px;
-  color: #000000;
-  font-family: "Arial - Bold MT";
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.54px;
   margin: 6px 3px 0px -6px;
 }
 
 .prestation-info-2 {
   width: 108px;
   height: 10px;
-  color: #000000;
-  font-family: "Arial - Bold MT";
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.54px;
   margin: 11px -24px 0px -27px;
 }
 
 .prestation-info-3 {
   width: 84px;
   height: 27px;
-  color: #000000;
-  font-family: "Arial - Bold MT";
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.54px;
   margin: 11px 12px 0px -13px;
 }
 
 .prestation-info-4 {
-  /* Style for "Perte fina" */
   width: 93px;
   height: 10px;
-  color: #000000;
-  font-family: "Arial - Bold MT";
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.54px;
   margin: 11px 18px 0px -18px;
 }
 
@@ -549,13 +539,13 @@ h1 {
   position: absolute;
   width: 193px;
   height: 12px;
-  color: #000000;
-  font-family: "Lease Plan";
+  color: var(--text-color-primary-black);
+  font-family: Lease Plan, Arial;
   font-size: 14px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: left;
   margin: 19px 392px 20px 16px;
 }
@@ -570,7 +560,7 @@ h1 {
   width: 206px;
   height: 32px;
   border-radius: 4px;
-  border: 1px solid #b5b5b5;
+  border: 1px solid var(--border-selection);
   margin: 10px 169px 9px 226px;
   background-image: linear-gradient(45deg, transparent 50%, gray 50%),
     linear-gradient(135deg, gray 50%, transparent 50%);
@@ -583,13 +573,13 @@ h1 {
 select {
   width: 154px;
   height: 13px;
-  color: #b2adad;
-  font-family: "Lease Plan";
+  color: var(--text-select-color);
+  font-family: Lease Plan, Arial;
   font-size: 12px;
   font-weight: 400;
   font-style: italic;
-  letter-spacing: normal;
-  line-height: normal;
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: center;
   padding-right: 33px;
   padding-left: 13px;
@@ -608,13 +598,13 @@ select {
 .selection-button-text {
   width: 73px;
   height: 8px;
-  color: #fefefe;
-  font-family: "Lease Plan";
+  color: var(--btn-text-color);
+  font-family: Lease Plan, Arial;
   font-size: 10px;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: center;
   text-transform: uppercase;
   margin-left: -19px;
@@ -625,6 +615,7 @@ select {
   width: 4px;
   height: 8px;
   color: var(--btn-text-color);
+  margin-top: 3px;
   margin-left: 14px;
 }
 
@@ -640,21 +631,15 @@ footer {
   margin-top: 27px;
 }
 
-.footer-text-container {
-  position: relative;
-  width: 626px;
-  height: 190px;
-}
-
 .footer-text-container p {
   width: 626px;
-  color: #a6a6a6;
+  color: var(--text-footer-color);
   font-family: "Arial MT";
   font-size: 10px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  font-style: var(--text-font-style-normal);
+  line-height: var(--text-line-height-normal);
+  letter-spacing: var(--text-letter-spacing-normal);
   text-align: left;
   padding: 16px 18px 0px 9px;
 }
