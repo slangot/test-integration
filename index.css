@@ -346,27 +346,51 @@ h1 {
   margin: 55px 110px 0px 98px;
 }
 
-.test {
-  /* Style for "RENAULT Sc" */
-  width: 191px;
-  height: 35px;
-  color: #000000;
-  font-family: "Arial MT";
-  font-size: 17px;
+.all-cars-button {
+  position: relative;
+  width: 372px;
+  height: 47px;
+  border-radius: 23px;
+  margin: 0 139px;
+  margin-top: 55px;
+  background-color: var(--btn-bg-color-primary);
+  border: none;
+}
+
+.all-cars-button-text {
+  width: 283px;
+  height: 12px;
+  color: var(--btn-text-color);
+  font-family: "Arial - Bold MT";
+  font-size: 15px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 20.02px;
+  line-height: normal;
   text-align: center;
-  /* Text style for "RENAULT Sc" */
+  text-transform: uppercase;
+  margin: 18px 0px 17px 34px;
+}
+
+.all-cars-icon {
+  margin: 1px 23px 1px 26px;
+}
+
+.test {
+  /* Style for "Rectangle" */
+  /* Style for "Voir toute" */
+  width: 283px;
+  height: 12px;
+  color: #fefefe;
   font-family: "Arial - Bold MT";
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  /* Text style for "Intens TCe" */
-  font-family: "Arial MT";
+  text-align: center;
+  text-transform: uppercase;
+  /* Text style for "Voir toute" */
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
