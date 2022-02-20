@@ -4,7 +4,7 @@
   --btn-text-color: #fefefe;
   --btn-bg-color-primary: #f06400;
   --bg-color-body: #ffffff;
-  --bg-color-decoration: #00b1af;
+  --bg-color-info: #00b1af;
   --bg-color-footer: #eeeeee;
 }
 
@@ -91,9 +91,87 @@ h1 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  text-align: center;
 }
 
 .header-button-icon {
   margin: 1px 0px 1px 19px;
+}
+
+.top-info-container {
+  width: 600px;
+  height: 127px;
+  margin: 18px 25px 26px 25px;
+  background-color: var(--bg-color-info);
+}
+
+.top-info-container aside {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*
+  justify-content: space-evenly;
+  */
+  flex-basis: 100%;
+  color: var(--bg-color-body);
+  width: 423px;
+  height: 96px;
+  margin: 0 87px 0 90px;
+  font-family: "Arial MT";
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.info-line-1,
+.info-line-3 {
+  font-weight: 400;
+}
+
+.info-line-1 {
+  font-family: "Arial - Bold MT";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 14px;
+}
+
+.info-line-2 {
+  font-family: "Arial MT";
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.info-line-3 {
+  font-family: "Arial - Bold MT";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.info-divider {
+  position: absolute;
+  top: 85px;
+  left: 151px;
+  right: 153px;
+  width: 119px;
+  height: 2px;
+  background-color: var(--bg-color-body);
+  margin: 0 auto;
+}
+
+.info-line-4 {
+  font-family: "Arial MT";
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 15px;
 }
