@@ -188,7 +188,7 @@ h1 {
 }
 
 /****
-  Cards Style 
+  Cars Cards Style 
 ****/
 
 .card-container {
@@ -376,22 +376,170 @@ h1 {
   margin: 1px 23px 1px 26px;
 }
 
-.test {
-  /* Style for "Rectangle" */
-  /* Style for "Voir toute" */
-  width: 283px;
-  height: 12px;
-  color: #fefefe;
+/****
+  Prestations Style 
+****/
+
+.prestation-container {
+  width: 586px;
+  height: 150px;
+  margin: 31px 35px 0px 29px;
+}
+
+.prestation-title {
+  width: 202px;
+  height: 13px;
+  color: var(--text-color-primary-black);
   font-family: "Arial - Bold MT";
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 1px;
+}
+
+.bold-title {
+  font-style: normal;
+  letter-spacing: 0.72px;
+  line-height: normal;
+}
+
+.prestation-divider {
+  width: 221px;
+  height: 5px;
+  border: 2px solid var(--text-color-primary-orange);
+  background-color: var(--text-color-primary-orange);
+  margin-top: -15px;
+}
+
+.prestation-card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.prestation-card {
+}
+
+.prestation-card-1 {
+  margin-left: 55px;
+}
+
+.prestation-card-2 {
+  margin-left: 90px;
+}
+
+.prestation-card-3 {
+  margin-left: 89px;
+}
+
+.prestation-card-4 {
+  margin-left: 89px;
+}
+
+.prestation-card-1,
+.prestation-card-2 {
+  margin-top: 22px;
+}
+
+.prestation-card-3,
+.prestation-card-4 {
+  margin-top: 17px;
+}
+
+.prestation-image-container-1 {
+  width: 50px;
+  height: 55px;
+}
+
+.prestation-image-container-2 {
+  width: 57px;
+  height: 50px;
+}
+
+.prestation-image-container-3 {
+  width: 59px;
+  height: 55px;
+}
+
+.prestation-image-container-4 {
+  width: 57px;
+  height: 55px;
+}
+
+.prestation-info {
+}
+
+.prestation-info-1 {
+  width: 53px;
+  height: 10px;
+  color: #000000;
+  font-family: "Arial - Bold MT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  margin: 6px 3px 0px -6px;
+}
+
+.prestation-info-2 {
+  width: 108px;
+  height: 10px;
+  color: #000000;
+  font-family: "Arial - Bold MT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  margin: 11px -24px 0px -27px;
+}
+
+.prestation-info-3 {
+  width: 84px;
+  height: 27px;
+  color: #000000;
+  font-family: "Arial - Bold MT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  margin: 11px 12px 0px -13px;
+}
+
+.prestation-info-4 {
+  /* Style for "Perte fina" */
+  width: 93px;
+  height: 10px;
+  color: #000000;
+  font-family: "Arial - Bold MT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.54px;
+  margin: 11px 18px 0px -18px;
+}
+.test {
+  /* Style for "Véhicule d" */
+  width: 84px;
+  height: 27px;
+  color: #000000;
+  font-family: "Arial - Bold MT";
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
   text-align: center;
-  text-transform: uppercase;
-  /* Text style for "Voir toute" */
+  /* Text style for "V, éhicule" */
   font-style: normal;
-  letter-spacing: normal;
+  letter-spacing: 0.54px;
   line-height: normal;
 }
