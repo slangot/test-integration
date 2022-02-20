@@ -546,7 +546,6 @@ h1 {
 }
 
 .selection-title {
-  /* Style for "Sélectionn" */
   position: absolute;
   width: 193px;
   height: 12px;
@@ -607,7 +606,6 @@ select {
 }
 
 .selection-button-text {
-  /* Style for "rechercher" */
   width: 73px;
   height: 8px;
   color: #fefefe;
@@ -619,10 +617,6 @@ select {
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
-  /* Text style for "rechercher" */
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   margin-left: -19px;
 }
 
@@ -634,20 +628,37 @@ select {
   margin-left: 14px;
 }
 
-.test {
-  /* Style for "Véhicule d" */
-  width: 84px;
-  height: 27px;
-  color: #000000;
-  font-family: "Arial - Bold MT";
-  font-size: 12px;
+/****
+  Footer Style 
+****/
+
+footer {
+  width: 653px;
+  height: 218px;
+  background-color: var(--bg-color-footer);
+  margin: 0 auto;
+  margin-top: 27px;
+}
+
+.footer-text-container {
+  position: relative;
+  width: 626px;
+  height: 190px;
+}
+
+.footer-text-container p {
+  width: 626px;
+  color: #a6a6a6;
+  font-family: "Arial MT";
+  font-size: 10px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  text-align: center;
-  /* Text style for "V, éhicule" */
-  font-style: normal;
-  letter-spacing: 0.54px;
-  line-height: normal;
+  text-align: left;
+  padding: 16px 18px 0px 9px;
+}
+
+.footer-text-container :nth-child(2) {
+  margin-top: -12px;
 }
